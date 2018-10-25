@@ -10,16 +10,16 @@
 1. お返事機能  
 LINEの会話内に特定のキーワードが含まれていたら、予め設定した返事をします。
 1. 占い機能  
-毎朝、私たち夫婦の星座占いをLINEへPUSH通知します。
+毎朝、私たち夫婦の星座占いをLINEへPUSH通知します。
 
 ## **利用する外部サービス**
-1. LINE Message API
+1. LINE Messaging API
 1. Azure Functions
 1. Web ad Fortune 無料版API　powerd by <a href="http://jugemkey.jp/api/">JugemKey</a> 【PR】<a href="http://www.tarim.co.jp/">原宿占い館 塔里木</a>  
 
 ## **当アプリの設定項目**
 ### **回答パターンファイル**
-お返事機能で使用する「**キーワード**と**回答**の組み合わせを指定するJson書式のファイルです。  
+お返事機能で使用する「**キーワード**と**回答**の組み合わせ」を指定するJson書式のファイルです。  
 デフォルトのファイル名は「AnswerPatterns.json」で、hima_repo.csproj にてデプロイ対象としています。  
 回答パターンファイルのサンプルは下記のとおりです。
 ~~~
