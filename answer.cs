@@ -82,6 +82,7 @@ namespace nkn1
         /// LINEへ投稿された写真に写っている人物の感情を返す。
         /// </summary>
         /// <param name="id"></param>
+        /// <param name="log"></param>
         private static async Task<string> GetEmotion(string id, ILogger log)
         {
             string emotionKeyWord = "";
@@ -164,9 +165,9 @@ namespace nkn1
                     new ReplyMessageObject()
                     {
                         ReplyToken = replyToken,
-                        Messages = new ReplyMessage[]
+                        Messages = new UnitMessage[]
                                     {
-                                        new ReplyMessage()
+                                        new UnitMessage()
                                         {
                                             Type = "text",
                                             Text = message

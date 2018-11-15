@@ -28,9 +28,9 @@ namespace nkn1
                             new PushMessageObject()
                             {
                                 To = System.Environment.GetEnvironmentVariable("LINE_PUSH_TO"),
-                                Messages = new PushMessage[]
+                                Messages = new UnitMessage[]
                                             {
-                                                new PushMessage()
+                                                new UnitMessage()
                                                 {
                                                     Type = "text",
                                                     Text = "あたちは ＨＩ・ＭＡ・ＲＩ。\n"
@@ -38,17 +38,17 @@ namespace nkn1
                                                         + "トトとカカの運勢を占ってあげうからネ。\n"
                                                         + "聞いてる？"
                                                 },
-                                                new PushMessage()
+                                                new UnitMessage()
                                                 {
                                                     Type = "text",
                                                     Text = libra
                                                 },
-                                                new PushMessage()
+                                                new UnitMessage()
                                                 {
                                                     Type = "text",
                                                     Text = pisces
                                                 },
-                                                new PushMessage()
+                                                new UnitMessage()
                                                 {
                                                     Type = "text",
                                                     Text = "powerd by JugemKey\n"
